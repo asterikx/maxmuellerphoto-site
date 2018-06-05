@@ -1,9 +1,10 @@
 {
-  "name": "maxmuellerphoto-blog",
+  "name": "maxmuellerphoto-site",
   "description": "Max Müller Photography Blog",
   "version": "1.0.0",
   "author": "Erik Müller",
   "dependencies": {
+    "dotenv": "^6.0.0",
     "gatsby-image": "^1.0.51",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-manifest": "^1.0.25",

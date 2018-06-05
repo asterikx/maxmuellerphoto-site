@@ -1,4 +1,4 @@
-const contentfulConfig = require('./.contentful')
+require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
@@ -7,10 +7,14 @@ module.exports = {
   plugins: [
     {
       resolve: 'gatsby-source-contentful',
-      options:
-        process.env.NODE_ENV === 'development'
-          ? contentfulConfig.development
-          : contentfulConfig.production,
+      options: {
+        host:
+          process.env.NODE_ENV === 'development'
+            ? 'preview.contentful.com'
+            : 'cdn.contentful.com',
+        spaceId: process.env.CONTENTFUL_SPACE_ID || '',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || '',
+      },
     },
     {
       resolve: 'gatsby-plugin-typography',
@@ -26,7 +30,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'maxmuellerphoto.com',
+        name: 'maxmuellerphoto-site',
         // short_name: 'maxmuellerphoto.com',
         start_url: '/',
         background_color: '#ffffff',
