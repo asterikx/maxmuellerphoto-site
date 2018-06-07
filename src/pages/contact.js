@@ -50,10 +50,16 @@ const TextareaField = ({ label, name, id, rows = 6 }) => (
 )
 
 const ContactForm = () => (
-  <form name="contact" method="post" netlify-honeypot="bot-field" netlify>
+  <form
+    name="contact"
+    method="post"
+    action="#"
+    netlify-honeypot="bot-field"
+    netlify
+  >
     <input type="hidden" name="bot-field" />
     <InputField name="name" id="name" label="Name" />
-    <InputField name="email" id="email" label="Email" />
+    <InputField name="email" type="email" id="email" label="Email" />
     <TextareaField name="message" id="message" label="Message" />
     <SubmitButton type="submit">SEND</SubmitButton>
   </form>
