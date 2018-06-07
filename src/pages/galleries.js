@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
-import styled from 'styled-components'
-import { Padding } from 'styled-components-spacing'
-import GalleryPreview from '../components/gallery-preview'
+import React, { Component } from "react"
+import Link from "gatsby-link"
+import Helmet from "react-helmet"
+import styled from "styled-components"
+import { Padding } from "styled-components-spacing"
+import { Container } from "../components/container"
+import GalleryPreview from "../components/gallery-preview"
 
 const PreviewGrid = styled.div`
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, 350px);
@@ -19,14 +19,16 @@ const Galleries = ({ data }) => {
   const galleries = data.allContentfulGallery.edges.map(edge => edge.node)
 
   return (
-    <Padding vertical={3}>
-      <PreviewGrid>
-        <Helmet title={`Galleries - ${siteTitle}`} />
-        {galleries.map(gallery => (
-          <GalleryPreview key={gallery.slug} contentfulGallery={gallery} />
-        ))}
-      </PreviewGrid>
-    </Padding>
+    <Container>
+      <Padding vertical={3}>
+        <PreviewGrid>
+          <Helmet title={`Galleries - ${siteTitle}`} />
+          {galleries.map(gallery => (
+            <GalleryPreview key={gallery.slug} contentfulGallery={gallery} />
+          ))}
+        </PreviewGrid>
+      </Padding>
+    </Container>
   )
 }
 

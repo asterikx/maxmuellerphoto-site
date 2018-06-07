@@ -1,21 +1,21 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
-import { Margin, Padding } from 'styled-components-spacing'
-import { NavBar, NavLink } from './navigation'
+import React from "react"
+import Link from "gatsby-link"
+import styled from "styled-components"
+import { Margin, Padding } from "styled-components-spacing"
+import { NavBar, NavLink } from "./navigation"
 
 const Logo = styled.img`
   display: block;
-  height: 28px;
+  height: 2.8rem;
   margin: 0;
   flex-shrink: 0;
 `
 
-const StyledHeader = styled.div`
+const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   width: 100%;
-  height: 65px;
+  height: 6.5rem;
   background-color: ${props => props.theme.secondary};
   z-index: 1;
   display: flex;
@@ -32,7 +32,7 @@ const Header = () => (
       <NavBar>
         <NavLink to="/">HOME</NavLink>
         <NavLink to="/galleries">GALLERY</NavLink>
-        <NavLink to="/about">ABOUT</NavLink>
+        <NavLink to="/contact">CONTACT</NavLink>
       </NavBar>
     </Margin>
   </StyledHeader>

@@ -1,13 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import styled, { css } from 'styled-components'
-import { Margin, Padding, mr } from 'styled-components-spacing'
-import { NavBar, NavLink } from './navigation'
-import FaFacebook from 'react-icons/lib/fa/facebook'
-import FaInstagram from 'react-icons/lib/fa/instagram'
+import React from "react"
+import Link from "gatsby-link"
+import styled, { css } from "styled-components"
+import { Margin, Padding, mr } from "styled-components-spacing"
+import { NavBar, NavLink } from "./navigation"
+import FaFacebook from "react-icons/lib/fa/facebook"
+import FaInstagram from "react-icons/lib/fa/instagram"
 
-const StyledFooter = styled.div`
-  height: 33px;
+const StyledFooter = styled.footer`
+  height: 3.3rem;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -37,7 +37,7 @@ const Footer = () => (
         <NavLink to="/imprint">IMPRINT</NavLink>
       </NavBar>
     </Margin>
-    <Margin right={3} style={{ marginLeft: 'auto' }}>
+    <Margin right={3} style={{ marginLeft: "auto" }}>
       <SocialBar>
         <SocialLink
           href="https://www.facebook.com/maxmuellerphoto/"

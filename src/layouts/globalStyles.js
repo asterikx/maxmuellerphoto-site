@@ -1,7 +1,7 @@
-import { injectGlobal } from 'styled-components'
-import theme from '../config/theme'
-import { media } from '../config/media'
-import * as fonts from '../fonts'
+import { injectGlobal } from "styled-components"
+import theme from "../config/theme"
+import { media } from "../config/media"
+import * as fonts from "../fonts"
 
 export default injectGlobal`
   @font-face {
@@ -25,7 +25,7 @@ export default injectGlobal`
   * {
     font-family: "Futura-Light"
   }
-  ul {
+  ul, ol, li, form {
     margin: 0;
     padding: 0;
   }
@@ -33,12 +33,13 @@ export default injectGlobal`
     color: ${theme.bg};
     background: ${theme.primary};
   }
+  html {
+    font-size: 62.5%;
+  }
   body {
+    font-size: 1.6rem;
     background: ${theme.bg};
-    color: ${theme.default};
-    @media ${media.phone} {
-      font-size: 14px;
-    }
+    color: ${theme.dark};
   }
   a {
     color: ${theme.dark};
@@ -63,17 +64,17 @@ export default injectGlobal`
     width: 6px;
     margin-left: -1.6rem;
   }
-  label {
-    margin-bottom: .5rem;
-    color: ${theme.dark};
-  }
-  input, textarea {
-    border-radius: .5rem;
-    border: none;
-    background: rgba(0, 0, 0, 0.05);
-    padding: .25rem 1rem;
+  button, input, textarea {
+    padding: 1rem;
+    border: 1px solid #ccc;
     &:focus {
       outline: none;
+    }
+  }
+  input, textarea {
+    background-color: #fafafa;
+    &:focus {
+      background-color: #ffffff;
     }
   }
 `

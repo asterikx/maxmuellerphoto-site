@@ -1,12 +1,13 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
-import loremIpsum from 'lorem-ipsum'
+import React, { Component } from "react"
+import Link from "gatsby-link"
+import Helmet from "react-helmet"
+import { Container } from "../components/container"
+import loremIpsum from "lorem-ipsum"
 
 const Imprint = () => (
   <div>
     <Helmet title="Imprint" />
-    <span>
+    <Container>
       {loremIpsum({
         count: 100, // Number of words, sentences, or paragraphs to generate.
         //units: 'sentences', // Generate words, sentences, or paragraphs.
@@ -15,7 +16,7 @@ const Imprint = () => (
         paragraphLowerBound: 3, // Minimum sentences per paragraph.
         paragraphUpperBound: 7, // Maximum sentences per paragraph.
       })}
-    </span>
+    </Container>
   </div>
 )
 

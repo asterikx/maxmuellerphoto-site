@@ -1,5 +1,12 @@
-import React from 'react'
+import React from "react"
+import styled from "styled-components"
+import { px } from "styled-components-spacing"
 
-export default ({ children }) => (
-  <div style={{ maxWidth: 1180, margin: '0 auto' }}>{children}</div>
-)
+const Container = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  ${px(3)};
+  }
+`
+
+export { Container }
