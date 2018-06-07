@@ -50,18 +50,25 @@ const TextareaField = ({ label, name, id, rows = 6 }) => (
 )
 
 const ContactForm = () => (
-  <form
-    name="contact"
-    method="post"
-    action="#"
-    netlify-honeypot="bot-field"
-    netlify
-  >
-    <input type="hidden" name="bot-field" />
-    <InputField name="name" id="name" label="Name" />
-    <InputField name="email" type="email" id="email" label="Email" />
-    <TextareaField name="message" id="message" label="Message" />
-    <SubmitButton type="submit">SEND</SubmitButton>
+  <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+    <p class="hidden">
+      <label>
+        Don’t fill this out if you're human: <input name="bot-field" />
+      </label>
+    </p>
+    <p>
+      <label>
+        Email: <input type="text" name="email" />
+      </label>
+    </p>
+    <p>
+      <label>
+        Message: <textarea name="message" />
+      </label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
   </form>
 )
 
@@ -83,10 +90,8 @@ const Contact = ({ data }) => {
     <Container>
       <Helmet title={`Contact - ${siteTitle}`} />
       <Layout>
-        <Margin vertical={3}>bla</Margin>
-        <Margin vertical={3}>
-          <ContactForm />
-        </Margin>
+        bla
+        <ContactForm />
       </Layout>
     </Container>
   )
