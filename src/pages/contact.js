@@ -50,7 +50,12 @@ const TextareaField = ({ label, name, id, rows = 6 }) => (
 )
 
 const ContactForm = () => (
-  <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+  >
     {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
     <input type="hidden" name="form-name" value="contact" />
     <input type="hidden" name="bot-field" />
