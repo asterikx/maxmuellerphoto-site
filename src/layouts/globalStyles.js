@@ -3,7 +3,7 @@ import theme from "../config/theme"
 import { media } from "../config/media"
 import * as fonts from "../fonts"
 
-console.log(fonts.FuturaLightTTF.toString())
+console.log(fonts.FuturaLightTTF)
 
 export default injectGlobal`
   @font-face {
