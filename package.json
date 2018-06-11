@@ -17,6 +17,7 @@
     "gatsby-transformer-remark": "^1.7.32",
     "gatsby-transformer-sharp": "^1.6.26",
     "lorem-ipsum": "^1.0.4",
+    "prop-types": "^15.6.1",
     "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
     "react-share": "^2.2.0",

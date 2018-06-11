@@ -3,12 +3,14 @@ import theme from "../config/theme"
 import { media } from "../config/media"
 import * as fonts from "../fonts"
 
+console.log(fonts.FuturaLightTTF.toString())
+
 export default injectGlobal`
   @font-face {
     font-family: "Futura-Light";
     font-weight: 300;
     src: local("Futura Light"), local("Futura-Light"),
-      url(${fonts.FuturaLightTTF}) format("ttf");
+      url('${fonts.FuturaLightTTF}') format("ttf");
   }
   @font-face {
     font-family: "Futura-Medium";

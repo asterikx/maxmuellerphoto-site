@@ -22,31 +22,28 @@ const Textarea = styled.textarea`
   resize: vertical;
 `
 
-const FieldWrapper = styled.div`
-  &:not(:first-child) {
-    ${mt(3)};
-  }
-`
-
 const SubmitButton = styled.button`
   min-width: 12rem;
   color: ${props => props.theme.darkContrast};
   background-color: ${props => props.theme.dark};
-  ${mt(3)};
 `
 
 const InputField = ({ label, name, id, type = "text" }) => (
-  <FieldWrapper>
-    <label htmlFor={id}>{label}</label>
-    <Input name={name} id={id} type={type} />
-  </FieldWrapper>
+  <p>
+    <label>
+      {label}
+      <Input name={name} id={id} type={type} />
+    </label>
+  </p>
 )
 
 const TextareaField = ({ label, name, id, rows = 6 }) => (
-  <FieldWrapper>
-    <label htmlFor={id}>{label}</label>
-    <Textarea name={name} id={id} rows={rows} />
-  </FieldWrapper>
+  <p>
+    <label>
+      {label}
+      <Textarea name={name} id={id} rows={rows} />
+    </label>
+  </p>
 )
 
 const ContactForm = () => (

@@ -1,8 +1,7 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import styled from 'styled-components'
-import Img from 'gatsby-image'
-//import ArticlePreview from '../components/article-preview'
+import React from "react"
+import Helmet from "react-helmet"
+import styled from "styled-components"
+import Img from "gatsby-image"
 
 const ImageGrid = styled.div`
   display: grid;
@@ -13,11 +12,13 @@ const Index = ({ data }) => {
   const { images } = data.allContentfulPortfolio.edges[0].node
 
   return (
-    <ImageGrid>
-      {images.map(({ photo }, index) => (
-        <Img key={index} sizes={photo.sizes} />
-      ))}
-    </ImageGrid>
+    <div>
+      <ImageGrid>
+        {images.map(({ photo }, index) => (
+          <Img key={index} sizes={photo.sizes} />
+        ))}
+      </ImageGrid>
+    </div>
   )
 }
 

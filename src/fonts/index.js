@@ -1,5 +1,5 @@
-import FuturaLightTTF from './Futura Light.ttf'
-import FuturaBookTTF from './Futura Book.ttf'
-import FuturaMediumTTF from './Futura Medium.ttf'
+import FuturaLightTTF from "./futura-light.ttf"
+import FuturaBookTTF from "./futura-book.ttf"
+import FuturaMediumTTF from "./futura-medium.ttf"
 
 export { FuturaLightTTF, FuturaBookTTF, FuturaMediumTTF }
