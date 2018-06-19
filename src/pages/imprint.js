@@ -1,8 +1,8 @@
-import React, { Component } from "react"
-import Link from "gatsby-link"
-import Helmet from "react-helmet"
-import { Container } from "../components/container"
-import loremIpsum from "lorem-ipsum"
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
+import { Container } from '../components/container'
+import loremIpsum from 'lorem-ipsum'
 
 const Imprint = () => (
   <div>

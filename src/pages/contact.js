@@ -1,12 +1,12 @@
-import React, { Component } from "react"
-import Link from "gatsby-link"
-import styled from "styled-components"
-import { media } from "../config/media"
-import { Margin, Padding, mt } from "styled-components-spacing"
-import breakpoint from "styled-components-breakpoint"
-import Helmet from "react-helmet"
-import loremIpsum from "lorem-ipsum"
-import { Container } from "../components/container"
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import { media } from '../config/media'
+import { Margin, Padding, mt } from 'styled-components-spacing'
+import breakpoint from 'styled-components-breakpoint'
+import Helmet from 'react-helmet'
+import loremIpsum from 'lorem-ipsum'
+import { Container } from '../components/container'
 
 /*
 
@@ -28,7 +28,7 @@ const SubmitButton = styled.button`
   background-color: ${props => props.theme.dark};
 `
 
-const InputField = ({ label, name, id, type = "text" }) => (
+const InputField = ({ label, name, id, type = 'text' }) => (
   <p>
     <label>
       {label}
@@ -65,7 +65,7 @@ const ContactForm = () => (
 
 const Layout = styled.div`
   display: grid;
-  ${breakpoint("tablet")`
+  ${breakpoint('tablet')`
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
   `}

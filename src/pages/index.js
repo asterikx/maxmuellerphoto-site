@@ -1,7 +1,7 @@
-import React from "react"
-import Helmet from "react-helmet"
-import styled from "styled-components"
-import Img from "gatsby-image"
+import React from 'react'
+import Helmet from 'react-helmet'
+import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 const ImageGrid = styled.div`
   display: grid;

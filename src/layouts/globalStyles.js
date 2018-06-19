@@ -1,31 +1,16 @@
-import { injectGlobal } from "styled-components"
-import theme from "../config/theme"
-import { media } from "../config/media"
-import * as fonts from "../fonts"
-
-console.log(fonts.FuturaLightTTF)
+import { injectGlobal } from 'styled-components'
+import theme from '../config/theme'
+import { media } from '../config/media'
+import * as fonts from '../fonts'
 
 export default injectGlobal`
   @font-face {
-    font-family: "Futura-Light";
+    font-family: 'Futura Light';
+    font-style: normal;
     font-weight: 300;
-    src: local("Futura Light"), local("Futura-Light"),
-      url('${fonts.FuturaLightTTF}') format("ttf");
-  }
-  @font-face {
-    font-family: "Futura-Medium";
-    font-weight: 500;
-    src: local("Futura Medium"), local("Futura-Medium"),
-      url(${fonts.FuturaMediumTTF}) format("ttf");
-  }
-  @font-face {
-    font-family: "Futura-Book";
-    font-weight: 500;
-    src: local("Futura Book"), local("Futura-Book"),
-      url(${fonts.FuturaBookTTF}) format("ttf");
-  }
-  * {
-    font-family: "Futura-Light"
+    src: local('Futura Light'), local('Futura-Light'),
+      url('${fonts.FuturaLightWOFF}') format('woff'),
+      url('${fonts.FuturaLightTTF}') format('truetype');
   }
   ul, ol, li, form {
     margin: 0;
@@ -39,6 +24,7 @@ export default injectGlobal`
     font-size: 62.5%;
   }
   body {
+    font-family: 'Futura Light';
     font-size: 1.6rem;
     background: ${theme.bg};
     color: ${theme.dark};

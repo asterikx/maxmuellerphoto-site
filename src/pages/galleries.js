@@ -1,10 +1,10 @@
-import React, { Component } from "react"
-import Link from "gatsby-link"
-import Helmet from "react-helmet"
-import styled from "styled-components"
-import { Padding } from "styled-components-spacing"
-import { Container } from "../components/container"
-import GalleryPreview from "../components/gallery-preview"
+import React, { Component } from 'react'
+import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
+import styled from 'styled-components'
+import { Padding } from 'styled-components-spacing'
+import { Container } from '../components/container'
+import GalleryPreview from '../components/gallery-preview'
 
 const PreviewGrid = styled.div`
   margin: 0 auto;

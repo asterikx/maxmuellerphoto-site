@@ -1,11 +1,11 @@
-import React, { Component } from "react"
-import Helmet from "react-helmet"
-import styled, { ThemeProvider } from "styled-components"
-import Link from "gatsby-link"
-import { Header } from "../components/header"
-import { Footer } from "../components/footer"
-import "./globalStyles"
-import theme from "../config/theme"
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import styled, { ThemeProvider } from 'styled-components'
+import Link from 'gatsby-link'
+import { Header } from '../components/header'
+import { Footer } from '../components/footer'
+import './globalStyles'
+import theme from '../config/theme'
 
 const Content = styled.main`
   margin-top: 6.5rem;
@@ -18,8 +18,8 @@ const Layout = ({ children, data }) => (
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          { name: "description", content: "Max Müller Photography Blog" },
-          { name: "keywords", content: "Photography, Motorsport, Blog" },
+          { name: 'description', content: 'Max Müller Photography Blog' },
+          { name: 'keywords', content: 'Photography, Motorsport, Blog' },
         ]}
       />
       <Header />
